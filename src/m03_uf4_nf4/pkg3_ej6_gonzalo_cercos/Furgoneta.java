@@ -17,6 +17,7 @@ public class Furgoneta extends TransporteCarga {
     
     @Override
     public double calcular_precio() {
+        this.precio_alquiler = dias_alquiler*precio_dia+PMA*precios;
         return precio_alquiler;
     }
     

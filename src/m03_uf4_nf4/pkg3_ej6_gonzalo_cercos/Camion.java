@@ -18,7 +18,7 @@ public class Camion extends TransporteCarga {
     
     @Override
     public double calcular_precio() {
-        this.precio_alquiler = precio_alquiler + precio;
+        this.precio_alquiler = (dias_alquiler*precio_dia+PMA*precios) + precio;
         return precio_alquiler;
     }
     

@@ -19,9 +19,4 @@ public abstract class TransporteCarga extends Vehiculo {
         this.precios = precios;
     }
     
-    @Override
-    public double calcular_precio (){
-        this.precio_alquiler = dias_alquiler*precio_dia+PMA*precios;
-        return precio_alquiler;
-    }
 }
