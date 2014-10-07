@@ -13,9 +13,14 @@ public class Microbus extends TransportePersonas {
     double precio = 1.5;
     int precio_plaza = 2;
     
+    public Microbus (String matricula, int dias_alquiler, int Num_Plazas){
+        super (matricula, dias_alquiler, Num_Plazas);
+    }
+    
     @Override
-    public double CalcularPrecio() {
-        return 0;
+    public double calcular_precio (){
+        this.precio_alquiler = (precio_alquiler * precio_dia) + (2*Num_Plazas);
+        return precio_alquiler;
     }
     
 }

@@ -11,5 +11,17 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 public abstract class TransporteCarga extends Vehiculo {
     
     protected double PMA;
-    protected int precio = 20;
+    protected int precios = 20;
+    
+    public TransporteCarga (String matricula, int dias_alquiler, int PMA, int precios){
+        super (matricula, dias_alquiler);
+        this.PMA = PMA;
+        this.precios = precios;
+    }
+    
+    @Override
+    public double calcular_precio (){
+        this.precio_alquiler = dias_alquiler*precio_dia+PMA*precios;
+        return precio_alquiler;
+    }
 }

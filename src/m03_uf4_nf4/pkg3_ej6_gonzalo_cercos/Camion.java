@@ -12,9 +12,14 @@ public class Camion extends TransporteCarga {
 
     protected int precio = 40;
     
+    public Camion (String matricula, int precio_alquiler, int PMA, int precios){
+        super (matricula, precio_alquiler, precios, PMA);
+    }
+    
     @Override
-    public double CalcularPrecio() {
-        return 0;
+    public double calcular_precio() {
+        this.precio_alquiler = precio_alquiler + precio;
+        return precio_alquiler;
     }
     
 }

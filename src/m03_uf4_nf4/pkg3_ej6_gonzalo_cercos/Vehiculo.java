@@ -11,10 +11,19 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 public abstract class Vehiculo {
 
     private String matricula;
-    private int dias_alquiler;
-    private int precio_dia = 50;
+    protected int dias_alquiler;
+    protected int precio_dia = 50;
     protected double precio_alquiler;
 
-    public abstract double CalcularPrecio ();
+    public abstract double calcular_precio ();
+    
+    public Vehiculo (String matricula, int dias_alquiler){
+        this.matricula = matricula;
+        this.dias_alquiler = dias_alquiler;
+    }
+    
+    protected String getMatricula (){
+        return matricula;
+    }
 
 }

@@ -10,9 +10,14 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
  */
 public class Furgoneta extends TransporteCarga {
 
+    
+    public Furgoneta (String matricula, int dias_alquiler, int PMA, int precios){
+        super (matricula, dias_alquiler, PMA, precios);
+    }
+    
     @Override
-    public double CalcularPrecio() {
-        return 0;
+    public double calcular_precio() {
+        return precio_alquiler;
     }
     
 }

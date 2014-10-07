@@ -9,4 +9,9 @@ public abstract class TransportePersonas extends Vehiculo {
 
     protected int Num_Plazas;
     
+    public TransportePersonas (String matricula, int dias_alquiler, int Num_Plazas){
+        super (matricula, dias_alquiler);
+        this.Num_Plazas = Num_Plazas;
+    }
+    
 }
