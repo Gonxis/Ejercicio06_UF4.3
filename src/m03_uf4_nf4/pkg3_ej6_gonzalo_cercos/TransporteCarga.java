@@ -16,7 +16,14 @@ public abstract class TransporteCarga extends Vehiculo {
     public TransporteCarga (String matricula, int dias_alquiler, int PMA, int precios){
         super (matricula, dias_alquiler);
         this.PMA = PMA;
-        this.precios = precios;
+       // this.precios = precios;
     }
     
+    protected double get_PMA (){
+        return PMA;
+    }
+    
+    protected void set_PMA (double PMA){
+        this.PMA = PMA;
+    }
 }

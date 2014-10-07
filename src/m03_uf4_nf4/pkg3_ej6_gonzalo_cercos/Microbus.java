@@ -19,7 +19,7 @@ public class Microbus extends TransportePersonas {
     
     @Override
     public double calcular_precio (){
-        this.precio_alquiler = (precio_alquiler * precio_dia) + (2*Num_Plazas);
+        this.precio_alquiler = (precio_alquiler * precio_dia) + (precio_plaza * Num_Plazas);
         return precio_alquiler;
     }
     

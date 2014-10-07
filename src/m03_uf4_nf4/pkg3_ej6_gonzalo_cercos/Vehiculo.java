@@ -22,8 +22,20 @@ public abstract class Vehiculo {
         this.dias_alquiler = dias_alquiler;
     }
     
-    protected String getMatricula (){
+    protected String get_Matricula (){
         return matricula;
     }
 
+    protected void set_Matricula (String matricula){
+        this.matricula = matricula;
+    }
+    
+    protected int get_dias_alquiler (){
+        return dias_alquiler;
+    }
+    
+    protected void set_dias_alquiler (int dias_alquiler){
+        this.dias_alquiler = dias_alquiler;
+    }
+    
 }

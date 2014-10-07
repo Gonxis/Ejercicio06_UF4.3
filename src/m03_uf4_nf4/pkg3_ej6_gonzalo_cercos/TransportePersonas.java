@@ -14,4 +14,11 @@ public abstract class TransportePersonas extends Vehiculo {
         this.Num_Plazas = Num_Plazas;
     }
     
+    protected int get_Num_Plazas(){
+        return Num_Plazas;
+    }
+    
+    protected void set_Num_Plazas (int Num_Plazas){
+        this.Num_Plazas = Num_Plazas;
+    }
 }
