@@ -8,7 +8,7 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 public abstract class TransportePersonas extends Vehiculo {
 
     protected int numPlazas;
-
+//Constructor
     public TransportePersonas(int Num_Plazas, String matricula) {
         super(matricula);
         this.numPlazas = numPlazas;

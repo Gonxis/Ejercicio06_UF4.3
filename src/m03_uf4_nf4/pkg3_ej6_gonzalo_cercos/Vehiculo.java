@@ -30,6 +30,6 @@ public abstract class Vehiculo {
     protected int getDias_alquiler() {
         return dias_alquiler;
     }
-
+//Implementaremos calcular_precio_alquiler a todas las clases que necesitemos calcular su precio
     public abstract double calcular_precio_alquiler();
 }

@@ -16,7 +16,7 @@ public class Camion extends TransporteCarga {
     public Camion(String matricula, double PMA) {
         super(PMA, matricula);
     }
-
+//Implementamos calcular precio para cada clase, en este caso, para Camion
     @Override
     public double calcular_precio_alquiler() {
         return (this.dias_alquiler * this.precio_dia + this.precioxPMA * this.PMA) + this.precioFijo;

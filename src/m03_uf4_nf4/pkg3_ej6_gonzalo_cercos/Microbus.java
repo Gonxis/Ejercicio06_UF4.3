@@ -16,7 +16,7 @@ public class Microbus extends TransportePersonas {
     public Microbus(String matricula, int numPlazas) {
         super(numPlazas, matricula);
     }
-
+//Implementamos calcular precio para cada clase, en este caso, para Microbus
     @Override
     public double calcular_precio_alquiler() {
         return this.dias_alquiler * this.precio_dia + this.precioPlaza * this.numPlazas;

@@ -13,7 +13,7 @@ public abstract class TransporteCarga extends Vehiculo {
 
     protected double PMA;
     protected int precioxPMA = 20;
-
+//Constructor
     public TransporteCarga(double PMA, String matricula) {
         super(matricula);
         this.PMA = PMA;

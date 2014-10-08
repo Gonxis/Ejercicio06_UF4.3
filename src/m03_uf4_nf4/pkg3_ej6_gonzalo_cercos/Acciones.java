@@ -19,7 +19,8 @@ public class Acciones {
 
     private static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
     private static ArrayList <Vehiculo> v;
-
+    
+// Añadimos matricula y num plazas en una lista
     public static void leer_fichero() throws IOException {
 
         File fichero = null;
