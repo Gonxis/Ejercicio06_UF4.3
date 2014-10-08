@@ -51,8 +51,7 @@ public class Acciones {
                 v.add(new Camion (flota [0], Integer.parseInt(flota [2]))); //matricula, PMA
             }
             
-            
-            
+               
             }
             fr.close();
 

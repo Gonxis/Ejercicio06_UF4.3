@@ -61,12 +61,12 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
                     int op1 = 0;
                     do {
 
-                        System.out.println("------------------ Tipo de ve --------------------");
+                        System.out.println("---------------- Tipo de vehículo ---------------");
                         System.out.println(" ");
-                        System.out.println("1. Tipo de vehículo a introducir");
-                        System.out.println("2. Matrícula del vehículo");
-                        System.out.println("3. Nº de plazas o PMA");
-                        System.out.println("4. Añadir vehículo al de la lista de la empresa");
+                        System.out.println("1. Coche");
+                        System.out.println("2. Microbus");
+                        System.out.println("3. Furgoneta");
+                        System.out.println("4. Camión");
                         System.out.println("5. Atrás");
                         System.out.println(" ");
                         System.out.println("-------------------------------------------------");
