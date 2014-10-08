@@ -34,7 +34,7 @@ public class Acciones {
             br = new BufferedReader(fr);
 
             String linea;
-
+            if (v==null) v= new ArrayList();
             while ((linea = br.readLine()) != null) {
                 String [] flota = linea.split(";");
                 
