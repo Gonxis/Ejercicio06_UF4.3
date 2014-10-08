@@ -6,10 +6,11 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 /**
  *
- * @author gonchicrcos
+ * @author Gonxi's
  */
 
 // Clase Main desde donde llamaremos a todas las otras clases y ejecutaremos el programa
@@ -21,6 +22,9 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
     private static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) {
         byte op = 0;
+        
+        ArrayList <Vehiculo> vehiculos = new ArrayList <Vehiculo> ();
+        
         do {
             
             System.out.println("-------------------- MENU --------------------");

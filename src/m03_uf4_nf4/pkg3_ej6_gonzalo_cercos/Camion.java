@@ -6,7 +6,7 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 
 /**
  *
- * @author gonchicrcos
+ * @author Gonxi's
  */
 
 //Sub clase de Transporte de carga, donde definimos otro atributo solo para esta clase, para poder hacer el cálculo del precio de su alquiler

@@ -6,7 +6,7 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 
 /**
  *
- * @author gonchicrcos
+ * @author Gonxi's
  */
 //Sub clase de Transporte de personas, un coche, donde implementamos "calcular precio"
 public class Coche extends TransportePersonas {
