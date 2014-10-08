@@ -61,7 +61,7 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
                     int op1 = 0;
                     do {
 
-                        System.out.println("---------------- Tipo de vehículo ---------------");
+                        System.out.println("--------------- Tipo de vehículo ---------------");
                         System.out.println(" ");
                         System.out.println("1. Coche");
                         System.out.println("2. Microbus");
@@ -69,7 +69,7 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
                         System.out.println("4. Camión");
                         System.out.println("5. Atrás");
                         System.out.println(" ");
-                        System.out.println("-------------------------------------------------");
+                        System.out.println("------------------------------------------------");
 
                         try {
                             System.out.print("Escoja la opción que desea hacer aqui: ");
@@ -79,34 +79,34 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
                             System.out.println("");
                             System.out.println("Tipo de variable incorrecta, se necesita un número entero");
 
-                            switch (op1){
+                            switch (op1) {
                                 // Tipo de vehículo que se quiere utilizar
                                 case 1:
                                     System.out.println("");
                                     System.out.println("Tipo de vehículo a introducir");
                                     System.out.println("");
-                                    
-                                    
+
+
                                     break;
                                 //Matrícula del vehículo
                                 case 2:
                                     System.out.println("");
                                     System.out.println("Matrícula del vehículo");
                                     System.out.println("");
-                                    
-                                    
+
+
                                     break;
                                 case 3:
                                     System.out.println("");
                                     System.out.println("Nº de plazas o PMA");
                                     System.out.println("");
-                                    
+
                                     break;
                                 case 4:
                                     System.out.println("");
                                     System.out.println("Añadir vehículo al de la lista de la empresa");
                                     System.out.println("");
-                                    
+
                                     break;
                                 case 5:
                                     System.out.println("");

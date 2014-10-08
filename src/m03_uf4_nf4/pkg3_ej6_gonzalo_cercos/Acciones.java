@@ -17,13 +17,13 @@ import java.util.ArrayList;
  *
  * @author Gonxi's
  */
-
 public class Acciones {
-    
+
     private static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-    private static ArrayList <Vehiculo> v;
-    public static void leer_fichero () throws IOException {
-    
+    private static ArrayList<Vehiculo> v;
+
+    public static void leer_fichero() throws IOException {
+
         File fichero = null;
         FileReader fr = null;
         BufferedReader br = null;
@@ -34,24 +34,21 @@ public class Acciones {
             br = new BufferedReader(fr);
 
             String linea;
-            if (v==null) v= new ArrayList();
+            if (v == null) {
+                v = new ArrayList();
+            }
             while ((linea = br.readLine()) != null) {
-                String [] flota = linea.split(";");
-                
-            if(flota [3].equalsIgnoreCase("Coche")){ 
-                v.add(new Coche(flota [0], Integer.parseInt(flota [2]))); //matricula, numPlazas
-            }
-            else if (flota [3].equalsIgnoreCase("Microbus")){
-                v.add(new Microbus(flota [0], Integer.parseInt(flota [2]))); //matricula, numPlazas
-            }
-            else if (flota [3].equalsIgnoreCase("Furgoneta")){
-                v.add(new Furgoneta (flota [0], Integer.parseInt(flota [2]))); //matricula, PMA
-            }
-            else if (flota [3].equalsIgnoreCase("Camión")){
-                v.add(new Camion (flota [0], Integer.parseInt(flota [2]))); //matricula, PMA
-            }
-            
-               
+                String[] flota = linea.split(";");
+
+                if (flota[3].equalsIgnoreCase("Coche")) {
+                    v.add(new Coche(flota[0], Integer.parseInt(flota[1]))); //matricula, numPlazas
+                } else if (flota[2].equalsIgnoreCase("Microbus")) {
+                    v.add(new Microbus(flota[0], Integer.parseInt(flota[1]))); //matricula, numPlazas
+                } else if (flota[2].equalsIgnoreCase("Furgoneta")) {
+                    v.add(new Furgoneta(flota[0], Integer.parseInt(flota[1]))); //matricula, PMA
+                } else if (flota[2].equalsIgnoreCase("Camión")) {
+                    v.add(new Camion(flota[0], Integer.parseInt(flota[1]))); //matricula, PMA
+                }
             }
             fr.close();
 

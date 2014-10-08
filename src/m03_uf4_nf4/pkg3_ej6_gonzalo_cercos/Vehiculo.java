@@ -31,13 +31,5 @@ public abstract class Vehiculo {
         return dias_alquiler;
     }
 
-    
-    
-    
-    
-    public abstract double calcular_precio_alquiler ();
-    
-    
- 
-    
+    public abstract double calcular_precio_alquiler();
 }

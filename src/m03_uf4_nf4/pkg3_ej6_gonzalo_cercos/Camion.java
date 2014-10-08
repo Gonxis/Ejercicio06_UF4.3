@@ -8,7 +8,6 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
  *
  * @author Gonxi's
  */
-
 //Sub clase de Transporte de carga, donde definimos otro atributo solo para esta clase, para poder hacer el cálculo del precio de su alquiler
 public class Camion extends TransporteCarga {
 
@@ -22,5 +21,4 @@ public class Camion extends TransporteCarga {
     public double calcular_precio_alquiler() {
         return (this.dias_alquiler * this.precio_dia + this.precioxPMA * this.PMA) + this.precioFijo;
     }
-       
 }

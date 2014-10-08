@@ -19,11 +19,8 @@ public class Coche extends TransportePersonas {
 
     @Override
     public double calcular_precio_alquiler() {
-        
-        return this.precio_dia * this.dias_alquiler + precioPlazaDia * this.dias_alquiler * this.numPlazas; 
+
+        return this.precio_dia * this.dias_alquiler + precioPlazaDia * this.dias_alquiler * this.numPlazas;
 
     }
-    
-    
-    
 }
