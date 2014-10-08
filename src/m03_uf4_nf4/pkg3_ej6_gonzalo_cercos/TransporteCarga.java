@@ -8,6 +8,8 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
  *
  * @author gonchicrcos
  */
+
+//Sub clase de Vehiculo, donde definiremos algun otro atributo para sus próximas clases y cojeremos algún otro de la clase Vehiculo
 public abstract class TransporteCarga extends Vehiculo {
     
     protected double PMA;

@@ -8,6 +8,7 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
  *
  * @author Gonxi's
  */
+//Super clase del programa
 public abstract class Vehiculo {
 
     private String matricula;

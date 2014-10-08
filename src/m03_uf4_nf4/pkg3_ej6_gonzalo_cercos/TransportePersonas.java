@@ -5,6 +5,7 @@
 package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 
 
+//Sub clase de Vehiculo donde le pasaremos los parametros Matricula y dias de alquiler de Vehiculo
 public abstract class TransportePersonas extends Vehiculo {
 
     protected int Num_Plazas;

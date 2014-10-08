@@ -11,6 +11,8 @@ import java.io.InputStreamReader;
  *
  * @author gonchicrcos
  */
+
+// Clase Main desde donde llamaremos a todas las otras clases y ejecutaremos el programa
 public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
 
     /**
