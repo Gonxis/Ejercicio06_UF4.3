@@ -21,38 +21,9 @@ import java.util.ArrayList;
 public class Acciones {
     
     private static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-    public static void cargardatos(ArrayList <Vehiculo> vehiculos) throws IOException {
-
-        int voto = 0;
-
-
-        /**
-         * name = name.replace(name.charAt(0), (char) (name.charAt(0) - 32));
-         * gendre = gendre.replace(gendre.charAt(0), (char) (gendre.charAt(0) -
-         * 32)); description = description.replace(description.charAt(0), (char)
-         * (description.charAt(0) - 32)); director =
-         * director.replace(director.charAt(0), (char) (director.charAt(0)-32));
-         */
-        FileWriter archivo = null;
-        PrintWriter pw = null;
-
-        try {
-            archivo = new FileWriter("Vehiculos.txt", true);
-            pw = new PrintWriter(archivo);
-//            pw.println(name + ";" + gendre + ";" + description + ";" + director + ";" + voto + ";");
-
-            pw.close();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Error en la escritura del fichero");
-        }
-
-        System.out.println("");
-        System.out.println("Process completed successfully");
-        System.out.println("");
-
-//Pasamos ahora a leer el fichero que acabamos de llenar        
+    private static ArrayList <Vehiculo> v;
+    public static void leer_fichero () throws IOException {
+    
         File fichero = null;
         FileReader fr = null;
         BufferedReader br = null;
@@ -65,12 +36,29 @@ public class Acciones {
             String linea;
 
             while ((linea = br.readLine()) != null) {
-//                vehiculos.add(linea.split(";"));
+                String [] flota = linea.split(";");
+                
+            if(flota [3].equalsIgnoreCase("Coche")){ 
+                v.add(new Coche(flota [0], 0, Integer.parseInt(flota [2])));
+            }
+            else if (flota [3].equalsIgnoreCase("Microbus")){
+                v.add(new Microbus(flota [0], 0, Integer.parseInt(flota [2])));
+            }
+            else if (flota [3].equalsIgnoreCase("Furgoneta")){
+                v.add(new Furgoneta (flota [0], 0, Integer.parseInt(flota [2]), Integer.parseInt(flota [3])));
+            }
+            else if (flota [3].equalsIgnoreCase("Camión")){
+                v.add(new Camion (flota [0], 0, Integer.parseInt(flota [2]), Integer.parseInt(flota [3])));
+            }
+            
+            
+            
             }
             fr.close();
 
         } catch (Exception e) {
             System.out.println("Error en la lectura del fichero");
+            System.out.println("");
         }
     }
 }

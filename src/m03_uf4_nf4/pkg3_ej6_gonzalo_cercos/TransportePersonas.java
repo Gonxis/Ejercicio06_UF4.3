@@ -5,21 +5,19 @@
 package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 
 
-//Sub clase de Vehiculo donde le pasaremos los parametros Matricula y dias de alquiler de Vehiculo
+//Sub clase de Vehiculo donde le pasaremos los parametros matricula y dias de alquiler de Vehiculo
 public abstract class TransportePersonas extends Vehiculo {
 
-    protected int Num_Plazas;
-    
-    public TransportePersonas (String matricula, int dias_alquiler, int Num_Plazas){
-        super (matricula, dias_alquiler);
-        this.Num_Plazas = Num_Plazas;
+    protected int numPlazas;
+
+    public TransportePersonas(int Num_Plazas, String matricula) {
+        super(matricula);
+        this.numPlazas = numPlazas;
+    }
+
+    public int getNum_Plazas() {
+        return numPlazas;
     }
     
-    protected int get_Num_Plazas(){
-        return Num_Plazas;
-    }
     
-    protected void set_Num_Plazas (int Num_Plazas){
-        this.Num_Plazas = Num_Plazas;
-    }
 }

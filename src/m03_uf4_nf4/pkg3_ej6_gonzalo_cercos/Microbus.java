@@ -12,17 +12,15 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 //Sub clase de Tranporte de personas, donde también nos interesa calcular el precio de su alquiler
 public class Microbus extends TransportePersonas {
 
-    double precio = 1.5;
-    int precio_plaza = 2;
-    
-    public Microbus (String matricula, int dias_alquiler, int Num_Plazas){
-        super (matricula, dias_alquiler, Num_Plazas);
+    int precioPlaza = 2;
+
+    public Microbus(int numPlazas, String matricula) {
+        super(numPlazas, matricula);
     }
-    
+
     @Override
-    public double calcular_precio (){
-        this.precio_alquiler = (precio_alquiler * precio_dia) + (precio_plaza * Num_Plazas);
-        return precio_alquiler;
+    public double calcular_precio_alquiler() {
+        return this.dias_alquiler * this.precio_dia + this.precioPlaza * this.numPlazas;
     }
-    
+      
 }

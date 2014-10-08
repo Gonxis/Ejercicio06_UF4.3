@@ -11,16 +11,19 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 //Sub clase de Transporte de personas, un coche, donde implementamos "calcular precio"
 public class Coche extends TransportePersonas {
 
-    protected double precio = 1.5;
-    
-    public Coche (String matricula, int dias_alquiler, int Num_Plazas){
-        super (matricula, dias_alquiler, Num_Plazas);
+    protected double precioPlazaDia = 1.5;
+
+    public Coche(int numPlazas, String matricula) {
+        super(numPlazas, matricula);
     }
-    
+
     @Override
-    public double calcular_precio (){
-        this.precio_alquiler = (precio_alquiler * precio_dia) + (dias_alquiler * precio * Num_Plazas);
-        return precio_alquiler;
+    public double calcular_precio_alquiler() {
+        
+        return this.precio_dia * this.dias_alquiler + precioPlazaDia * this.dias_alquiler * this.numPlazas; 
+
     }
+    
+    
     
 }

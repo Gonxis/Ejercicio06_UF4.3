@@ -1,0 +1,8 @@
+ABCD - 123;50;5;Coche;null;
+EFGH - 456;50;4;Coche;null;
+ABCA - 121;50;null;Camion;0;
+HXSL - 456;50;null;Camion;0;
+XXXX - 213;50;2;Furgoneta;0;
+PRTA - 110;50;4;Furgoneta;0;
+GDRL - 666;50;21;Microbus;null;
+PDQW - 444;50;20;Microbus;null;
