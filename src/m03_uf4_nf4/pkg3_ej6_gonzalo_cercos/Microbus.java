@@ -14,7 +14,7 @@ public class Microbus extends TransportePersonas {
 
     int precioPlaza = 2;
 
-    public Microbus(int numPlazas, String matricula) {
+    public Microbus(String matricula, int numPlazas) {
         super(numPlazas, matricula);
     }
 

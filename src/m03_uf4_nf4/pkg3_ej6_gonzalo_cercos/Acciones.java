@@ -39,16 +39,16 @@ public class Acciones {
                 String [] flota = linea.split(";");
                 
             if(flota [3].equalsIgnoreCase("Coche")){ 
-                v.add(new Coche(flota [0], 0, Integer.parseInt(flota [2])));
+                v.add(new Coche(flota [0], Integer.parseInt(flota [2]))); //matricula, numPlazas
             }
             else if (flota [3].equalsIgnoreCase("Microbus")){
-                v.add(new Microbus(flota [0], 0, Integer.parseInt(flota [2])));
+                v.add(new Microbus(flota [0], Integer.parseInt(flota [2]))); //matricula, numPlazas
             }
             else if (flota [3].equalsIgnoreCase("Furgoneta")){
-                v.add(new Furgoneta (flota [0], 0, Integer.parseInt(flota [2]), Integer.parseInt(flota [3])));
+                v.add(new Furgoneta (flota [0], Integer.parseInt(flota [2]))); //matricula, PMA
             }
             else if (flota [3].equalsIgnoreCase("Camión")){
-                v.add(new Camion (flota [0], 0, Integer.parseInt(flota [2]), Integer.parseInt(flota [3])));
+                v.add(new Camion (flota [0], Integer.parseInt(flota [2]))); //matricula, PMA
             }
             
             

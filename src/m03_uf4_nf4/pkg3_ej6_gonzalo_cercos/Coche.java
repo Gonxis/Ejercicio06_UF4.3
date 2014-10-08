@@ -13,7 +13,7 @@ public class Coche extends TransportePersonas {
 
     protected double precioPlazaDia = 1.5;
 
-    public Coche(int numPlazas, String matricula) {
+    public Coche(String matricula, int numPlazas) {
         super(numPlazas, matricula);
     }
 

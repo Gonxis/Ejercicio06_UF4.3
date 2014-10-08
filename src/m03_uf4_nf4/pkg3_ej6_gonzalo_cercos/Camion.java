@@ -14,7 +14,7 @@ public class Camion extends TransporteCarga {
 
     protected int precioFijo = 40;
 
-    public Camion(double PMA, String matricula) {
+    public Camion(String matricula, double PMA) {
         super(PMA, matricula);
     }
 
