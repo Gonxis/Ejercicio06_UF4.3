@@ -1,8 +1,8 @@
-ABCD - 123;5;Coche;null;
-EFGH - 456;4;Coche;null;
-ABCA - 121;null;Camion;0;
-HXSL - 456;null;Camion;0;
-XXXX - 213;2;Furgoneta;0;
-PRTA - 110;4;Furgoneta;0;
-GDRL - 666;21;Microbus;null;
-PDQW - 444;20;Microbus;null;
+1234 - AAA;5;Coche;null;
+5678 - BBB;4;Coche;null;
+9012 - CCC;null;Camion;0;
+2345 - DDD;null;Camion;0;
+6789 - EEE;2;Furgoneta;0;
+0123 - FFF;4;Furgoneta;0;
+3456 - GGG;21;Microbus;null;
+7890 - HHH;20;Microbus;null;

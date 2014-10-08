@@ -14,7 +14,7 @@ public abstract class TransportePersonas extends Vehiculo {
         this.numPlazas = numPlazas;
     }
 
-    public int getNum_Plazas() {
+    protected int getNum_Plazas() {
         return numPlazas;
     }
 }

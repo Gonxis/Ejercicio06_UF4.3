@@ -19,11 +19,11 @@ public abstract class TransporteCarga extends Vehiculo {
         this.PMA = PMA;
     }
 
-    public double getPMA() {
+    protected double getPMA() {
         return PMA;
     }
 
-    public void setPMA(double PMA) {
+    protected void setPMA(double PMA) {
         this.PMA = PMA;
     }
 }

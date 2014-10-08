@@ -11,7 +11,7 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 //Sub clase de Tranporte de personas, donde también nos interesa calcular el precio de su alquiler
 public class Microbus extends TransportePersonas {
 
-    int precioPlaza = 2;
+    protected int precioPlaza = 2;
 
     public Microbus(String matricula, int numPlazas) {
         super(numPlazas, matricula);

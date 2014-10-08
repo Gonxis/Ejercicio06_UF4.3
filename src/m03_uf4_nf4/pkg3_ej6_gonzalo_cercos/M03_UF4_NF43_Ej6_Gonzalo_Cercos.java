@@ -24,7 +24,6 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
     public static void main(String[] args) throws IOException {
         byte op = 0;
 
-        ArrayList<Vehiculo> v = new ArrayList<Vehiculo>();
 
         do {
 
@@ -72,15 +71,15 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
                         System.out.println("------------------------------------------------");
 
                         try {
-                            System.out.print("Escoja la opción que desea hacer aqui: ");
+                            System.out.print("Escoja el tipo de vehículo que desea añadir ahora: ");
                             String input = stdin.readLine();
                             op1 = Byte.parseByte(input);
                         } catch (Exception e) {
                             System.out.println("");
-                            System.out.println("Tipo de variable incorrecta, se necesita un número entero");
+                            System.out.println("Tipo de variable incorrecta, se necesita un número entero del 1-5");
 
                             switch (op1) {
-                                // Tipo de vehículo que se quiere utilizar
+                                // Coche
                                 case 1:
                                     System.out.println("");
                                     System.out.println("Tipo de vehículo a introducir");
@@ -88,7 +87,7 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
 
 
                                     break;
-                                //Matrícula del vehículo
+                                //Microbus
                                 case 2:
                                     System.out.println("");
                                     System.out.println("Matrícula del vehículo");
@@ -96,23 +95,27 @@ public class M03_UF4_NF43_Ej6_Gonzalo_Cercos {
 
 
                                     break;
+                                //Furgoneta    
                                 case 3:
                                     System.out.println("");
                                     System.out.println("Nº de plazas o PMA");
                                     System.out.println("");
 
                                     break;
+                                //Camión
                                 case 4:
                                     System.out.println("");
                                     System.out.println("Añadir vehículo al de la lista de la empresa");
                                     System.out.println("");
 
                                     break;
+                                //Atrás
                                 case 5:
                                     System.out.println("");
                                     System.out.println("Atrás...");
                                     System.out.println("");
                                     break;
+                                //Errores
                                 default:
                                     System.out.println("");
                                     System.out.println("Error con la opción, vuelva a intentarlo...");

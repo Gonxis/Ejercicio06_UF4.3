@@ -7,10 +7,8 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 /**
@@ -20,7 +18,7 @@ import java.util.ArrayList;
 public class Acciones {
 
     private static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-    private static ArrayList<Vehiculo> v;
+    private static ArrayList <Vehiculo> v;
 
     public static void leer_fichero() throws IOException {
 

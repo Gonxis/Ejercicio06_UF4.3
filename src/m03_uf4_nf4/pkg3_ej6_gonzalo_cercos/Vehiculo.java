@@ -15,19 +15,19 @@ public abstract class Vehiculo {
     protected int dias_alquiler;
     protected int precio_dia = 50;
 
-    public Vehiculo(String matricula) {
+    protected Vehiculo(String matricula) {
         this.matricula = matricula;
     }
 
-    public void setDias_alquiler(int dias_alquiler) {
+    protected void setDias_alquiler(int dias_alquiler) {
         this.dias_alquiler = dias_alquiler;
     }
 
-    public String getMatricula() {
+    protected String getMatricula() {
         return matricula;
     }
 
-    public int getDias_alquiler() {
+    protected int getDias_alquiler() {
         return dias_alquiler;
     }
 
