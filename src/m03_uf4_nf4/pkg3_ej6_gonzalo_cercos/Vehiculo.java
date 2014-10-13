@@ -11,7 +11,7 @@ package m03_uf4_nf4.pkg3_ej6_gonzalo_cercos;
 //Super clase del programa
 public abstract class Vehiculo {
 
-    private String matricula;
+    protected String matricula;
     protected int dias_alquiler;
     protected int precio_dia = 50;
 

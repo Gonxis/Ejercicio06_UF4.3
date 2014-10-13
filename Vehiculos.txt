@@ -1,8 +1,8 @@
-1234 - AAA;5;Coche;null;
-5678 - BBB;4;Coche;null;
-9012 - CCC;null;Camion;0;
-2345 - DDD;null;Camion;0;
-6789 - EEE;2;Furgoneta;0;
-0123 - FFF;4;Furgoneta;0;
-3456 - GGG;21;Microbus;null;
-7890 - HHH;20;Microbus;null;
+1234-AAA;5;Coche;
+5678-BBB;4;Coche;
+3456-GGG;21;Microbus;
+7890-HHH;20;Microbus;
+6789-EEE;2;Furgoneta;
+0123-FFF;4;Furgoneta;
+9012-CCC;2;Camion;
+2345-DDD;30;Camion;
